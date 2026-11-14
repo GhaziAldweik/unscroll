@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Events come from Instagram only (packageNames).
+    isAccessibilityTool is deliberately absent: this app is not an accessibility tool.
+    canPerformGestures is declared now so the service need not be re-approved in Phase 4.
+    notificationTimeout: Android holds every event this long before delivering it (100 ms cost
+    every screen change that much). The service coalesces bursts itself, so keep it short.
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeWindowStateChanged|typeWindowContentChanged|typeViewScrolled"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagReportViewIds|flagRetrieveInteractiveWindows|flagIncludeNotImportantViews"
+    android:canPerformGestures="true"
+    android:canRetrieveWindowContent="true"
+    android:description="@string/accessibility_service_description"
+    android:notificationTimeout="20"
+    android:packageNames="com.instagram.android"
+    android:settingsActivity="dev.ghazi.igfocus.MainActivity"
+    android:summary="@string/accessibility_service_summary" />

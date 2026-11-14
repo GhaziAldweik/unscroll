@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Unscroll</string>
+
+    <!-- Shown by Android in Settings → Accessibility. -->
+    <string name="accessibility_service_label">Unscroll</string>
+    <string name="accessibility_service_summary">Watches Instagram screens only. Blocks only the parts you switch on in the app.</string>
+    <string name="accessibility_service_description">Unscroll watches which Instagram screen is showing, so that it can keep you off the Reels tab and hide the Home feed and Explore, while leaving messages and posting alone.\n\nIt receives events from the Instagram app only. It reads the names and positions of on-screen elements, not message text. It taps the DMs tab for you and draws covers over parts of Instagram. A later version will also read usernames on Stories, only so that you can hide chosen people\'s Stories.\n\nEvery rule is off until you switch it on in the app, and the Unscroll tile in Quick Settings pauses everything.\n\nThe app has no internet permission.</string>
+
+    <string name="back">Back</string>
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
+
+    <!-- Tabs along the bottom -->
+    <string name="tab_focus">Focus</string>
+    <string name="tab_stories">Stories</string>
+    <string name="tab_settings">Settings</string>
+
+    <!-- Focus tab: status card -->
+    <string name="status_on">Unscroll is on</string>
+    <string name="status_paused_until">Paused until %1$s</string>
+    <string name="status_paused_indefinitely">Paused until you resume</string>
+    <string name="status_paused_text">Instagram works normally until then.</string>
+    <string name="status_minutes_left">%1$d min left. Instagram works normally until then.</string>
+    <string name="health_service_running">Accessibility service running</string>
+    <string name="health_instagram_seen">Last saw Instagram %1$s</string>
+    <string name="health_instagram_waiting">Has not seen Instagram since it started. Open Instagram once.</string>
+    <string name="health_battery">Battery is not set to Unrestricted, so your phone may put Unscroll to sleep</string>
+    <string name="time_just_now">just now</string>
+    <string name="time_minutes_ago">%1$d min ago</string>
+    <string name="time_at">at %1$s</string>
+    <string name="status_nothing_on">Nothing is blocked yet</string>
+    <string name="status_not_running">Unscroll is not running</string>
+    <string name="status_not_running_text">Turn on its accessibility service to start.</string>
+    <string name="status_blocking_now">Blocking %1$s</string>
+    <string name="status_nothing_on_text">Switch on what to block below.</string>
+    <string name="status_set_up">Set up Unscroll</string>
+    <string name="status_pause_label">Pause</string>
+    <string name="status_stopped_actions">Stopped itself at %1$s: a jump away from %2$s kept repeating. Starts again at %3$s, or when you pause and resume.</string>
+    <string name="status_stopped_covers">Covers stopped themselves at %1$s: they kept flickering on %2$s. Back at %3$s, or when you pause and resume.</string>
+    <!-- Quoted: Android drops an unquoted trailing space. -->
+    <string name="list_separator">", "</string>
+    <string name="pause_5">5 min</string>
+    <string name="pause_15">15 min</string>
+    <string name="pause_60">1 hour</string>
+    <string name="pause_until_resumed">Until I resume</string>
+    <string name="resume">Resume</string>
+
+    <!-- Focus tab: rules -->
+    <string name="section_blocked">What to block</string>
+    <string name="rule_reels_tab">Reels</string>
+    <string name="rule_reels_tab_note">Reels button hidden. Reels from Explore, search or profiles close.</string>
+    <string name="rule_reels_tab_info">The Reels button in Instagram\'s bottom bar is covered, and swiping across to the Reels tab jumps to your messages. A reel opened from Explore, search, a profile or a post closes with Back.\n\nA reel a friend sends you, or one from your Saved or your own profile, plays. Swiping on to the next reel goes Back, so only that one plays.</string>
+    <string name="rule_home_feed">Home feed</string>
+    <string name="rule_home_feed_note">Hidden below the Stories row. Instagram opens on your messages.</string>
+    <string name="rule_home_feed_info">Everything below the Stories row is covered by a plain panel with an Open messages button. Stories stay.\n\nWhen Instagram opens on Home, Unscroll taps the DMs tab for you. If you tap Home yourself afterwards, it stays on Home.</string>
+    <string name="rule_explore">Explore</string>
+    <string name="rule_explore_note">Grid hidden. The search box still works.</string>
+    <string name="rule_explore_info">The grid of suggested posts under the search box is covered. Tapping the search box to find people works as usual.</string>
+    <string name="rule_search_results">Search result pages</string>
+    <string name="rule_search_results_note">Pages of posts for a hashtag, place or word close.</string>
+    <string name="rule_search_results_info">After a search, the page full of posts for a hashtag, place, audio or plain word goes Back to the search box. The names suggested while you type still work, so you can open someone\'s profile.</string>
+    <string name="rule_suggested">Suggested posts</string>
+    <string name="rule_suggested_note">On profiles and under posts</string>
+    <string name="coming_later">Coming later</string>
+    <string name="rule_status_off">Off</string>
+    <string name="rule_status_worked">On · last acted %1$s</string>
+    <string name="rule_status_waiting">On · has not had to act yet</string>
+    <string name="rule_status_paused">On · paused</string>
+    <string name="rule_status_no_service">On · not working: the service is not running</string>
+    <string name="about_rule">About %1$s</string>
+    <string name="section_kept">Always works</string>
+    <string name="kept_messages">Messages</string>
+    <string name="kept_posting">Posting</string>
+    <string name="kept_profile">Your profile</string>
+    <string name="kept_stories">Stories</string>
+    <string name="kept_friends_reels">Reels friends send</string>
+    <string name="kept_saved_reels">Saved reels</string>
+
+    <!-- Stories tab -->
+    <string name="stories_title">Stories</string>
+    <string name="stories_later">Coming in a later update. You can set it up now: nothing is hidden yet.</string>
+    <string name="stories_switch">Show other people\'s Stories</string>
+    <string name="stories_switch_note">Off hides everyone\'s Stories. Your own always show.</string>
+    <string name="stories_you">You</string>
+    <string name="stories_note">People on this list stay hidden while Stories are on. Turning the switch off and on never clears the list. Tap a name to remove it.</string>
+    <string name="stories_hidden_while_off">Stories are off, so everyone is hidden. This list takes over again when you switch them back on.</string>
+    <string name="stories_own_username">Your Instagram username</string>
+    <string name="stories_hidden_heading">Hidden people (%1$d)</string>
+    <string name="stories_hidden_empty">Nobody is hidden.</string>
+    <string name="stories_add_hint">Username to hide</string>
+
+    <!-- Focus tab: Saved Reels -->
+    <string name="saved_title">Watching your saved reels</string>
+    <string name="saved_text">Profile → menu (top right) → Saved. Reels play one at a time: swiping up from a saved reel leads to reels that are not yours, so it closes.</string>
+
+    <!-- Settings tab -->
+    <string name="section_permissions">Permissions</string>
+    <string name="service_running_text">On and running.</string>
+    <string name="permissions_none_else">Nothing else is needed: no display over other apps, no notifications, no internet.</string>
+    <string name="section_behaviour">Behaviour</string>
+    <string name="open_on_messages">Open Instagram on messages</string>
+    <string name="open_on_messages_note">When Instagram opens on Home, Unscroll taps the DMs tab for you.</string>
+    <string name="open_on_messages_needs_home">Works only while the Home feed rule is on.</string>
+    <string name="stop_title">Ways to stop Unscroll</string>
+    <string name="stop_pause">Pause on the Focus tab, from 5 minutes to until you resume.</string>
+    <string name="stop_tile">The Unscroll tile in Quick Settings: one tap pauses for 15 minutes, another resumes.</string>
+    <string name="stop_off">Turn off Unscroll below, or switch it off in Android\'s Accessibility settings.</string>
+    <string name="section_protection">Protection</string>
+    <string name="support_works">Works</string>
+    <string name="support_partial">Partial</string>
+    <string name="support_search_partial">hashtags still show in suggestions while you type</string>
+    <string name="protection_stories">Hiding Stories</string>
+    <string name="state_on">On</string>
+    <string name="state_off">Off</string>
+    <string name="section_diagnostics">Diagnostics</string>
+    <string name="check_intro">Checks what blocking depends on, using only what the phone reports.</string>
+    <string name="check_run">Check protection</string>
+    <string name="check_service_off">The accessibility service is switched off, so nothing is blocked.</string>
+    <string name="check_instagram_installed">Instagram %1$s is installed</string>
+    <string name="check_instagram_missing">Instagram is not installed.</string>
+    <string name="check_nothing_on">No rule is switched on, so Unscroll is not watching Instagram. Switch rules on in the Focus tab.</string>
+    <string name="check_instagram_not_seen">Instagram has not been seen since the service started. Open it, then come back here.</string>
+    <string name="check_nothing_recognised">Instagram was seen, but none of its screens were recognised. An Instagram update may have renamed them, so blocking cannot work until Unscroll is updated.</string>
+    <string name="check_recognised">%1$d kinds of Instagram screen recognised, the last %2$s</string>
+    <string name="check_stopped">Part of blocking stopped itself because it kept repeating. It starts again at %1$s, or when you pause and resume.</string>
+    <string name="check_battery_ok">Battery use is Unrestricted</string>
+    <string name="check_all_good">Nothing to fix</string>
+    <plurals name="check_problems">
+        <item quantity="one">%1$d problem to fix</item>
+        <item quantity="other">%1$d problems to fix</item>
+    </plurals>
+    <string name="open_instagram">Open Instagram</string>
+    <string name="dash_open_diagnostics">Diagnostics and Inspector</string>
+    <string name="diagnostics_link_note">Service status, Instagram version, screen captures</string>
+    <string name="privacy_no_internet">No internet permission: the app can\'t send anything on its own.</string>
+    <string name="privacy_reads">Reads only the names and positions of Instagram\'s on-screen elements, never your messages.</string>
+    <string name="privacy_local">Settings are stored on this phone only. No account, no backend, no tracking, no cloud sync.</string>
+    <string name="section_maintenance">Maintenance</string>
+    <string name="intro_again">Show the introduction again</string>
+    <string name="reset_settings">Reset settings</string>
+    <string name="reset_settings_note">Every rule off, hidden list and step-in counts cleared</string>
+    <string name="reset_confirm_title">Reset all settings?</string>
+    <string name="reset_confirm_text">Every blocking rule goes off, Stories go back on, and the hidden list, your username and the step-in counts are cleared. Inspector captures stay. This cannot be undone.</string>
+    <string name="turn_off">Turn off Unscroll</string>
+    <string name="turn_off_note">Switches its accessibility service off</string>
+    <string name="turn_off_confirm_title">Turn off Unscroll?</string>
+    <string name="turn_off_confirm_text">Its accessibility service switches off and Instagram works normally. To turn it back on, open Settings, then Permissions, then Open Accessibility settings.</string>
+    <string name="privacy_more">Full details</string>
+    <string name="privacy_less">Fewer details</string>
+    <string name="about_versions">Unscroll %1$s · Instagram %2$s</string>
+
+    <!-- Step-ins: exact counts, never an estimate of time. -->
+    <string name="section_today">Today</string>
+    <string name="stepins_today_label">times Unscroll stepped in today</string>
+    <string name="stepins_week">%1$d this week</string>
+    <string name="stepins_info">One step-in is one visit to a blocked screen that Unscroll covered or left for you: the feed, Explore, the Reels tab, a reel from Explore or search, a result page. Counted on this phone only, for the last two weeks. It is a count, not a time estimate: Unscroll can\'t know how long you would have scrolled.</string>
+    <string name="about_stepins">About step-ins</string>
+
+    <!-- Why Unscroll exists, and a research note that changes daily. Sources are given with each. -->
+    <string name="why_title">Why Unscroll exists</string>
+    <string name="why_short">You open Instagram to see your friends\' Stories or reply to a message. An algorithm shouldn\'t take the rest of your time.</string>
+    <string name="why_text">You open Instagram to see your friends\' Stories or reply to a message. But the app is built to keep you there: the feed never ends, and the next swipe might always be the good one. Before you know it, the time is gone, and you never chose to give it.\n\nUnscroll keeps what you came for: messages, Stories and posting. It removes the endless parts, so you get two things back: your time, and a clearer mind.\n\nWhy it matters: heavy scrolling through bad news (doomscrolling) is linked to more symptoms of depression and post-traumatic stress. Bright screens at bedtime worsen sleep, and attention on a screen now lasts about 47 seconds on average before we switch. And uncertain rewards, the kind a feed delivers, are especially good at engaging the brain\'s dopamine system.</string>
+    <string name="why_sources">Price et al., Psychological Trauma: Theory, Research, Practice, and Policy, 2022 · Chang et al., PNAS, 2015 · Mark, Attention Span, 2023 · Fiorillo, Tobler &amp; Schultz, Science, 2003</string>
+    <string name="read_more">Read more</string>
+    <string name="read_less">Show less</string>
+    <string name="science_title">Today\'s science</string>
+    <string name="science_note">Short summaries of published research. Results are averages across groups, not predictions for any one person.</string>
+    <string-array name="science_headlines">
+        <item>Uncertainty is the hook</item>
+        <item>The slot-machine schedule</item>
+        <item>Likes light up the reward system</item>
+        <item>Less is better</item>
+        <item>A month off Facebook</item>
+        <item>We check twice as often as we think</item>
+        <item>Attention residue</item>
+        <item>47 seconds</item>
+        <item>Screens at bedtime</item>
+        <item>Use now, feel worse later</item>
+        <item>Anything but boredom</item>
+        <item>One week without Facebook</item>
+        <item>A one-week break</item>
+        <item>Six minutes on task</item>
+        <item>Batch the pings</item>
+        <item>The multitasking cost</item>
+        <item>Short videos, forgotten plans</item>
+        <item>Doomscrolling</item>
+    </string-array>
+    <string-array name="science_texts">
+        <item>Dopamine neurons respond most strongly when a reward is uncertain: their sustained activity peaked when a reward came only half the time. An endless feed, where any swipe might be the good one, is built on that uncertainty.</item>
+        <item>Rewards that arrive after an unpredictable number of actions produce fast, persistent behaviour that is hard to stop. It is the schedule behind slot machines, and behind pull-to-refresh.</item>
+        <item>When teenagers saw their own photos with many likes, the nucleus accumbens, a core part of the brain\'s reward circuit, was more active. They were also more likely to like photos that already had many likes.</item>
+        <item>Students who limited Facebook, Instagram and Snapchat to 10 minutes each a day for three weeks reported significantly less loneliness and depression than a control group who used them as usual, most clearly in those who started out more depressed.</item>
+        <item>In a randomised experiment, people paid to deactivate Facebook for four weeks gained about an hour a day of free time and reported small but significant gains in well-being. Many kept using it less afterwards.</item>
+        <item>When phone use was logged instead of self-reported, young adults checked their phones around 85 times a day, about twice as often as they thought.</item>
+        <item>Switching away from a task leaves attention residue: part of your mind stays on the old task, and performance on the next one drops. Every quick look at a feed is a switch.</item>
+        <item>Logged on computers, people\'s attention on one screen now lasts about 47 seconds on average before they switch, down from about two and a half minutes in 2004.</item>
+        <item>Reading on a light-emitting screen before bed suppressed melatonin, delayed the body clock, made it take longer to fall asleep and left people less alert the next morning, compared with reading a printed book.</item>
+        <item>Texting young adults five times a day for two weeks showed that the more they used Facebook, the worse they felt at the next check-in, and the more their life satisfaction declined over the two weeks.</item>
+        <item>Left alone with their thoughts for 6 to 15 minutes, many people chose to give themselves mild electric shocks rather than do nothing. Reaching for a feed is often an escape from exactly that moment.</item>
+        <item>People randomly assigned to quit Facebook for one week reported higher life satisfaction and more positive emotions than those who kept using it, with the largest gains for heavy users.</item>
+        <item>Adults who took a one-week break from social media showed better well-being and less depression and anxiety than those who carried on as usual.</item>
+        <item>Observed while studying, students stayed on task for less than six minutes on average before switching, usually to technology. Those who checked Facebook during the session also had lower grade averages, a correlation rather than a proven cause.</item>
+        <item>People whose phone notifications arrived in three batches a day felt less stressed and more in control, and reported better attention and productivity, than those who got them as they came.</item>
+        <item>People who habitually juggle many media streams were worse at filtering out irrelevant information and slower at switching tasks than people who rarely do.</item>
+        <item>In a lab study, scrolling a stream of short TikTok-style videos left people worse at remembering to carry out a planned task than the comparison conditions did.</item>
+        <item>Over 30 days of daily check-ins during the COVID-19 pandemic, people reported more symptoms of depression and post-traumatic stress on days they used social media. It is a link, not proof of cause, and it was strongest for people who were already vulnerable.</item>
+    </string-array>
+    <string-array name="science_sources">
+        <item>Fiorillo, Tobler &amp; Schultz, Science, 2003</item>
+        <item>Ferster &amp; Skinner, Schedules of Reinforcement, 1957</item>
+        <item>Sherman et al., Psychological Science, 2016</item>
+        <item>Hunt, Marx, Lipson &amp; Young, Journal of Social and Clinical Psychology, 2018</item>
+        <item>Allcott, Braghieri, Eichmeyer &amp; Gentzkow, American Economic Review, 2020</item>
+        <item>Andrews, Ellis, Shaw &amp; Piwek, PLOS ONE, 2015</item>
+        <item>Leroy, Organizational Behavior and Human Decision Processes, 2009</item>
+        <item>Mark, Attention Span, 2023</item>
+        <item>Chang, Aeschbach, Duffy &amp; Czeisler, PNAS, 2015</item>
+        <item>Kross et al., PLOS ONE, 2013</item>
+        <item>Wilson et al., Science, 2014</item>
+        <item>Tromholt, Cyberpsychology, Behavior, and Social Networking, 2016</item>
+        <item>Lambert et al., Cyberpsychology, Behavior, and Social Networking, 2022</item>
+        <item>Rosen, Carrier &amp; Cheever, Computers in Human Behavior, 2013</item>
+        <item>Fitz et al., Computers in Human Behavior, 2019</item>
+        <item>Ophir, Nass &amp; Wagner, PNAS, 2009</item>
+        <item>Chiossi et al., CHI Conference on Human Factors in Computing Systems, 2023</item>
+        <item>Price et al., Psychological Trauma: Theory, Research, Practice, and Policy, 2022</item>
+    </string-array>
+
+    <!-- First-run introduction -->
+    <string name="intro_skip">Skip</string>
+    <string name="intro_next">Next</string>
+    <string name="intro_done">Start</string>
+    <string name="intro_later">Later</string>
+    <string name="intro_to_setup">Set up</string>
+    <string name="intro_what_title">Instagram, without the endless scroll</string>
+    <string name="intro_what_text">Unscroll runs beside the official Instagram app. It hides only the parts you switch off, such as Reels, the Home feed and Explore, and leaves messages, posting, your profile and Stories alone.</string>
+    <string name="intro_access_title">Why it needs accessibility access</string>
+    <string name="intro_access_text">Android\'s accessibility service is the only way for an app to see which Instagram screen is showing and to cover parts of it. Unscroll reads the names and positions of Instagram\'s on-screen elements, never your messages.\n\nIt has no internet permission, and its covers need no \"display over other apps\" permission.</string>
+    <string name="intro_pause_title">Easy to pause or turn off</string>
+    <string name="intro_pause_text">Pause for a few minutes or until you resume, on the Focus tab or with one tap on the Unscroll tile in Quick Settings.\n\nTo turn it off completely, use Turn off Unscroll in Settings, or Android\'s Accessibility settings.</string>
+    <string name="intro_setup_title">Setting up</string>
+    <string name="intro_setup_text">Two steps: switch on the accessibility service, and set battery use to Unrestricted. The Settings tab opens each page for you; you flip every switch yourself.</string>
+
+    <!-- Covers drawn over Instagram -->
+    <string name="cover_home_text">Feed hidden by Unscroll</string>
+    <string name="cover_open_messages">Open messages</string>
+    <string name="cover_explore_text">Explore hidden by Unscroll. Search for people above.</string>
+
+    <!-- Setup -->
+    <string name="setup_intro">Each button opens a settings page. You flip the switches yourself; this app never changes phone settings.</string>
+    <string name="setup_step1_title">Turn on the accessibility service</string>
+    <string name="setup_step1_text">Accessibility, then Installed apps, then Unscroll, then switch it on.</string>
+    <string name="setup_step2_title">If Samsung blocks that switch</string>
+    <string name="setup_step2_text">Open App info, tap the three dots at the top right, choose \"Allow restricted settings\", then repeat step 1. Usually only needed when the app was installed from a file on the phone.</string>
+    <string name="open_app_info">Open App info</string>
+    <string name="setup_step3_title">Let it run in the background</string>
+    <string name="setup_step3_text">In App info, tap Battery and choose Unrestricted, so your phone does not put the service to sleep.</string>
+    <string name="setup_step4_title">Keep Advanced Protection off</string>
+    <string name="setup_step4_text">Android 17\'s Advanced Protection removes accessibility access from apps like this one. Auto Blocker only matters when installing the app from a file on the phone.</string>
+    <string name="add_tile">Add the Pause tile</string>
+    <string name="tile_added">Tile added.</string>
+    <string name="tile_already_added">The tile is already in Quick Settings.</string>
+    <string name="tile_not_added">Tile not added. You can also add it by editing Quick Settings.</string>
+    <string name="permissions_title">What the app can access</string>
+    <string name="permissions_text">Accessibility service: reads the structure of Instagram\'s screens, meaning the names and positions of on-screen elements. It taps the DMs tab or presses Back for you, and draws covers over the parts you switch off. It receives events from Instagram only.\n\nSeeing that Instagram is installed: used to show its version. This is not a permission prompt.\n\nNot requested: internet, display over other apps, usage access, notifications, contacts, storage, location.\n\nWith no internet permission, the app can\'t send anything on its own. The app\'s manifest in its source code lists every permission it asks for.</string>
+
+    <!-- Quick Settings tile -->
+    <string name="tile_label">Unscroll</string>
+    <string name="tile_on">On</string>
+    <string name="tile_paused">Paused</string>
+    <string name="tile_paused_until">Paused until %1$s</string>
+
+    <string name="section_service">Accessibility service</string>
+    <string name="service_running">Running.</string>
+    <string name="service_enabled_not_running">Switched on in Settings, but not running right now. Open Instagram once. If this does not change, switch the service off and on again.</string>
+    <string name="service_off">Off. Switch on \"Unscroll\" in Accessibility settings. If your phone blocks it as a restricted setting, open App info for this app, tap the three dots, choose \"Allow restricted settings\", then try again.</string>
+    <string name="open_accessibility_settings">Open Accessibility settings</string>
+    <string name="settings_not_available">Could not open that settings page on this phone.</string>
+
+    <string name="section_inspector">Inspector</string>
+    <string name="inspector_switch">Inspector mode</string>
+    <string name="inspector_explanation">Shows a small Capture button while Instagram is open. Tapping it records the names of the on-screen elements, with a label you pick. It records no text, usernames or images, and it blocks nothing.</string>
+    <string name="instagram_version">Instagram version: %1$s</string>
+    <string name="instagram_not_found">not found</string>
+    <string name="last_screen">Last screen read: %1$s (%2$d view IDs) at %3$s</string>
+    <string name="last_screen_no_count">Last screen read: %1$s at %2$s</string>
+    <string name="last_screen_none">Last screen read: none yet</string>
+    <string name="distinct_screens">Different screens seen since the service started: %1$d</string>
+
+    <string name="section_captures">Captures (%1$d)</string>
+    <string name="captures_empty">No captures yet. Turn on Inspector mode, open Instagram and tap Capture on each screen.</string>
+    <string name="capture_row_detail">%1$s · %2$d view IDs · Instagram %3$s</string>
+    <string name="delete">Delete</string>
+    <string name="share_captures">Share</string>
+    <string name="copy_captures">Copy</string>
+    <string name="clear_captures">Clear all</string>
+    <string name="clear_confirm_title">Delete all captures?</string>
+    <string name="clear_confirm_text">This cannot be undone.</string>
+    <string name="cancel">Cancel</string>
+    <string name="export_label">Unscroll captures</string>
+
+    <!-- Overlay shown on top of Instagram in Inspector mode. -->
+    <string name="capture_button">Capture</string>
+    <string name="capture_saved">Saved</string>
+    <string name="capture_nothing">Nothing to read</string>
+    <string name="picker_title">Which screen is this?</string>
+</resources>

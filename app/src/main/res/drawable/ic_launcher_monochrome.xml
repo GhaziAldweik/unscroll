@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    The themed-icon layer: the same broken loop and dot as ic_launcher_foreground, in one colour
+    (the launcher tints it).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M54,54 C60,43 79,43 79,54 C79,65 60,65 54,54 C48,43 29,43 29,54 C29,65 48,65 54,54"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="7"
+        android:strokeLineCap="round"
+        android:trimPathStart="0"
+        android:trimPathEnd="0.78"
+        android:trimPathOffset="0.36" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M74,54 A5,5 0 1 1 84,54 A5,5 0 1 1 74,54 Z" />
+</vector>

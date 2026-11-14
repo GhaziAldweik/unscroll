@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    "Broken loop": the infinity sign of the endless feed, cut open on the right, with a white dot
+    where it stops. The four curves are equal in length, so the trim fractions place the gap
+    symmetrically around the rightmost point (79,54): the stroke shows 36%..114% of the path,
+    leaving 14%..36% open, and the dot sits in that gap.
+    Everything stays inside the adaptive-icon safe zone (a 33dp radius around the centre).
+    The themed-icon version is ic_launcher_monochrome.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M54,54 C60,43 79,43 79,54 C79,65 60,65 54,54 C48,43 29,43 29,54 C29,65 48,65 54,54"
+        android:strokeWidth="7"
+        android:strokeLineCap="round"
+        android:trimPathStart="0"
+        android:trimPathEnd="0.78"
+        android:trimPathOffset="0.36">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="29"
+                android:startY="43"
+                android:endX="79"
+                android:endY="65">
+                <item android:offset="0" android:color="@color/ic_launcher_accent_start" />
+                <item android:offset="1" android:color="@color/ic_launcher_accent_end" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="@color/ic_launcher_dot"
+        android:pathData="M74,54 A5,5 0 1 1 84,54 A5,5 0 1 1 74,54 Z" />
+</vector>
