@@ -20,6 +20,10 @@ Keep your messages, posting and profile. Lose Reels, the Home feed and Explore.<
 
 **Status:** 1.1.0, in daily use by its developer since November 2026, tested on one phone ([details](#compatibility-and-known-limitations)). It doesn't modify Instagram, ask for your login or use any Instagram API. It watches which Instagram screen is showing and covers or skips only the parts you switch off.
 
+<p align="center">
+  <img src="docs/demo.gif" width="360" alt="Demo: Instagram's Home with the feed covered and the Reels button gone, Explore covered, Unscroll counting its step-ins from 0 to 11, and today's research note">
+</p>
+
 ## Why
 
 You open Instagram to see your friends' Stories or reply to a message. The feed is built to keep you there: it never ends, and the next swipe might always be the good one. An algorithm shouldn't take the rest of your time. Unscroll keeps what you came for and removes the endless parts, so you get back your time and a clearer mind.
