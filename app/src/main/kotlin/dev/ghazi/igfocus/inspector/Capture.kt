@@ -15,8 +15,8 @@ data class Capture(
 )
 
 /**
- * The fixed labels offered when capturing. The first group is what Phase 3 still needs measured
- * ("Still unmeasured" in CLAUDE.md); the second is the Phase 2 list, kept for recapturing.
+ * The fixed labels offered when capturing. The first group is the screens not yet measured;
+ * the second is the original list, kept for recapturing.
  */
 object CaptureLabels {
     val ALL = listOf(
